@@ -5,6 +5,17 @@
     list-style: none;
     box-sizing: border-box;
 }
+p {
+    margin: 10px;
+}
+
+h2 {
+    margin: 10px;
+}
+
+table {
+    margin: 10px;
+}
 
 body {
     font-family: montserrat;
@@ -124,5 +135,4 @@ section {
     background: url(https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2021/09/how-to-inspect-and-change-style-using-google-chrome-1.webp) no-repeat;
     background-size: cover;
     height: calc(100vh - 80px);
-
 }
