@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>7 Wonders Regie|11/25/2023</title>
+</head>
+
+<body style="height: 2000px;">
+
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand mb-0 h1">
+                <img class="d-inline-block align-top"
+                    src="data:image/png;base64,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"
+                    width="30" height="30" />
+                7 wonders
+            </a>
+            <button type="button" data-bs-toggler="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">
+                            Rose Amris Gulay
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">
+                            Ken Ryan Simbajon
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link active">
+                            Regie Tinampay
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a href="#" class="nav-link active dropdown-toggle" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Regie Tinampay
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a href="#" class="dropdown-item">Features #1</a></li>
+                            <li><a href="#" class="dropdown-item">Features #2</a></li>
+                            <li><a href="#" class="dropdown-item">Features #3</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">
+                            Grace Tinampay
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">
+                            Princess Coma
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <form action="" class="d-flex">
+                <input type="text" class="form-control me-2">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form> -->
+        </div>
+    </nav>
+    <style>
+        .carousel-item {
+            height: 32rem;
+            background: #777;
+            color: white;
+            position: relative;
+        }
+
+        .container1 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding-bottom: 50px;
+            padding-left: 100px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    stackpath.bootstrapcdn.com
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <ol class="carousel-indicators">
+                <li data-bs-target="myCarousel" data-slide-to="0" class="active"></li>
+                <li data-bs-target="myCarousel" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-item active">
+                <div class="container1">
+                    <h1>Example Headline</h1>
+                    <p>dfsdakfkljgjdfoisdjufdosifjisdoimfumdsoifijsdmlki</p>
+                    <!-- <a href="#" class="btn btn-lg btn-primary">
+                            Sign up today
+                        </a> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container1">
+                    <h1>hjbhjb</h1>
+                    <p>dfsdakfkljgjdfoisdjufdosifjisdoimfumdsoifijsdmlki</p>
+                    <!-- <a href="#" class="btn btn-lg btn-primary">
+                            Sign up today
+                        </a> -->
+                </div>
+            </div>
+        </div>
+        <a href="#myCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+            <span class="sr-only">Previous</span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a href="#myCarousel" class="carousel-control-next" role="button" data-slide="next">
+            <span class="sr-only">Previous</span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
