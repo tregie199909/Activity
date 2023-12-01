@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -73,15 +74,16 @@
             </form> -->
         </div>
     </nav>
+
     <style>
         .carousel-item {
             height: 32rem;
-            background: #777;
+            background: black;
             color: white;
             position: relative;
         }
 
-        .container1 {
+        .containers {
             position: absolute;
             bottom: 0;
             left: 0;
@@ -89,31 +91,137 @@
             padding-bottom: 50px;
             padding-left: 100px;
         }
+        .overlay-image {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            background-position: center;
+            background-size: cover;
+            opacity: 0.5;
+        }
     </style>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    stackpath.bootstrapcdn.com
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0"></li>
+            <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
+            <li data-target="#myCarousel" data-slide-to="7"></li>
+        </ol>
         <div class="carousel-inner">
-            <ol class="carousel-indicators">
-                <li data-bs-target="myCarousel" data-slide-to="0" class="active"></li>
-                <li data-bs-target="myCarousel" data-slide-to="1"></li>
-            </ol>
-            <div class="carousel-item active">
-                <div class="container1">
-                    <h1>Example Headline</h1>
-                    <p>dfsdakfkljgjdfoisdjufdosifjisdoimfumdsoifijsdmlki</p>
-                    <!-- <a href="#" class="btn btn-lg btn-primary">
-                            Sign up today
-                        </a> -->
+            <div class="carousel-item active" data-interval="8000">
+                <div class="overlay-image"
+                    style="background-image: url(https://st.adda247.com/https://adda247jobs-wp-assets-adda247.s3.ap-south-1.amazonaws.com/articles/wp-content/uploads/2022/11/29193854/Seven-Wonders-of-the-World.jpg);">
+                </div>
+                <!-- <div class="containers">
+                    <h1>fs</h1>
+                    <p>sfdsdf</p>
+                    <a href="#" class="btn btn-lg btn-primary">
+                        Sign up today
+                    </a>
+                </div> -->
+            </div>
+            <div class="carousel-item" data-interval="8000">
+                <div class="overlay-image"
+                    style="background-image: url(https://cdn.britannica.com/25/153525-050-FC43840D/Khaznah-Petra-Jordan.jpg);">
+                </div>
+                <div class="containers">
+                    <h1>Petra</h1>
+                    <p>The ancient city of Petra, Jordan, is located in a remote valley, nestled among sandstone
+                        mountains and cliffs. It was purported to be one of the places where Moses struck a rock and
+                        water gushed forth.</p>
+                    <a href="#" class="btn btn-lg btn-primary">
+                        Sign up today
+                    </a>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="container1">
-                    <h1>hjbhjb</h1>
-                    <p>dfsdakfkljgjdfoisdjufdosifjisdoimfumdsoifijsdmlki</p>
-                    <!-- <a href="#" class="btn btn-lg btn-primary">
-                            Sign up today
-                        </a> -->
+            <div class="carousel-item" data-interval="8000">
+                <div class="overlay-image"
+                    style="background-image: url(https://cdn.britannica.com/82/94382-050-20CF23DB/Great-Wall-of-China-Beijing.jpg);">
+                </div>
+                <div class="containers">
+                    <h1>Great Wall of China</h1>
+                    <p>Great might be an understatement. One of the world’s largest building-construction projects, the
+                        Great Wall of China is widely thought to be about 5,500 miles (8,850 km) long; a disputed
+                        Chinese study, however, claims the length is 13,170 miles (21,200 km).</p>
+                    <a href="#" class="btn btn-lg btn-primary">
+                        Sign up today
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item" data-interval="8000">
+                <div class="overlay-image"
+                    style="background-image: url(https://cdn.britannica.com/49/61349-050-9FFBEB28/El-Castillo-pyramid-plaza-Toltec-state-Yucatan.jpg);">
+                </div>
+                <div class="containers">
+                    <h1>Chichén Itzá</h1>
+                    <p>Chichén Itzá is a Mayan city on the Yucatán Peninsula in Mexico, which flourished in the 9th and
+                        10th centuries CE. Under the Mayan tribe Itzá—who were strongly influenced by the Toltecs—a
+                        number of important monuments and temples were built.</p>
+                    <a href="#" class="btn btn-lg btn-primary">
+                        Sign up today
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item" data-interval="8000">
+                <div class="overlay-image"
+                    style="background-image: url(https://cdn.britannica.com/30/94530-050-99493FEA/Machu-Picchu.jpg);">
+                </div>
+                <div class="containers">
+                    <h1>Machu Picchu</h1>
+                    <p>This Incan site near Cuzco, Peru, was “discovered” in 1911 by Hiram Bingham, who believed it was
+                        Vilcabamba, a secret Incan stronghold used during the 16th-century rebellion against Spanish
+                        rule.</p>
+                    <a href="#" class="btn btn-lg btn-primary">
+                        Sign up today
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item" data-interval="8000">
+                <div class="overlay-image"
+                    style="background-image: url(https://cdn.britannica.com/54/150754-050-5B93A950/statue-Christ-the-Redeemer-Rio-de-Janeiro.jpg);">
+                </div>
+                <div class="containers">
+                    <h1>Christ the Redeemer</h1>
+                    <p>Christ the Redeemer, a colossal statue of Jesus, stands atop Mount Corcovado in Rio de Janeiro.
+                        Its origins date to just after World War I, when some Brazilians feared a “tide of godlessness.”
+                    </p>
+                    <a href="#" class="btn btn-lg btn-primary">
+                        Sign up today
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item" data-interval="8000">
+                <div class="overlay-image"
+                    style="background-image: url(https://cdn.britannica.com/36/162636-050-932C5D49/Colosseum-Rome-Italy.jpg);">
+                </div>
+                <div class="containers">
+                    <h1>Colosseum</h1>
+                    <p>The Colosseum in Rome was built in the first century by order of the Emperor Vespasian. A feat of
+                        engineering, the amphitheater measures 620 by 513 feet (189 by 156 meters) and features a
+                        complex system of vaults.</p>
+                    <a href="#" class="btn btn-lg btn-primary">
+                        Sign up today
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item" data-interval="8000">
+                <div class="overlay-image"
+                    style="background-image: url(https://cdn.britannica.com/86/170586-050-AB7FEFAE/Taj-Mahal-Agra-India.jpg);">
+                </div>
+                <div class="containers">
+                    <h1>Taj Mahal</h1>
+                    <p>This mausoleum complex in Agra, India, is regarded as one of the world’s most iconic monuments
+                        and is perhaps the finest example of Mughal architecture.</p>
+                    <a href="#" class="btn btn-lg btn-primary">
+                        Sign up today
+                    </a>
                 </div>
             </div>
         </div>
@@ -125,28 +233,11 @@
             <span class="sr-only">Previous</span>
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </a>
-
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
